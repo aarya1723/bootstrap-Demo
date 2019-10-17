@@ -1,0 +1,41 @@
+<!-- <h1>
+    Welcome to Our Page</h1>
+
+<p>
+    Home is where the heart is but every room should be memorable and serve a purpose. People come to your site to get to know you and find out what you can do for them. Your home page content should be clear and easy to read while luring readers to open
+    the front door
+</p> -->
+
+<h1>
+    {{name}}
+</h1>
+<h1>
+    {{a+b}}
+</h1>
+<h1>
+    {{animals[2]}} {{animals[3]}}
+</h1>
+<h1>
+    {{animals[0]}}
+</h1>
+<h1>
+    {{data.name}}
+</h1>
+<table class="table table-dark table-bordered table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Cell</th>
+    </tr>
+    <tr *ngFor="let _dataRecord of dataRecord">
+        <td>{{_dataRecord.name}}</td>
+        <td>{{_dataRecord.age}}</td>
+        <td>{{_dataRecord.cell}}</td>
+    </tr>
+
+</table>
+
+<button class="btn btn-primary" (click)="test()">Click</button>
+
+<img src="{{homeimg}}" alt="">
+<img src="../../assets/images/edu1.jpg" alt="">
